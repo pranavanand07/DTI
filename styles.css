@@ -190,13 +190,10 @@ tbody > tr:hover {
     } 
 }
 
-/* Your existing CSS styles */
-
-/* Update CSS as needed for chart canvas */
 #myChart {
     max-width: 800px;
     margin: 20px auto;
-    display: none;/* Initially hide the chart canvas */
+    display: none;
 }
 
 #toggleGraph{
