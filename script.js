@@ -1,8 +1,6 @@
-// Add Chart.js functionality
 const editIcon = `<i class="fas fa-edit"></i>`;
 const deleteIcon = `<i class="fas fa-trash"></i>`;
 
-// Create a function to plot the histogram
 function plotHistogram() {
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
@@ -167,14 +165,8 @@ submitButton.addEventListener("click", () => {
     water = [w, ...water]
     exercise = [e, ...exercise]
     bloodsugar = [b, ...bloodsugar]
-    // date.push(d) 
-    // water.push(w) 
-    // exercise.push(e) 
-    // bloodsugar.push(b) 
     clearInputs()
     fillTable()
     addToLocalStorage()
 })
-
-// Add event listener for the toggle graph button
 document.getElementById('toggleGraph').addEventListener('click', toggleGraphType);
