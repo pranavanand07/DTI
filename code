@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Group Number-3 | Health Tracker</title> 
+    <!-- Font Awesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="/styles.css"> 
+</head> 
+<body> 
+    <div class="app"> 
+        <h1>Group Number-3</h1> 
+        <h3>Health Tracker App</h3> 
+        <div class="inputs"> 
+            <div> 
+                <label for="water">Water Intake (in ml)</label> 
+                <input id="water" type="number"> 
+            </div> 
+            <div> 
+                <label for="exercise">Exercise Duration (in sec)</label> 
+                <input id="exercise" type="number"> 
+            </div> 
+            <div> 
+                <label for="bloodsugerlevel">Calories Intake (in cal)</label> 
+                <input id="bloodsugerlevel" type="number"> 
+            </div> 
+        </div> 
+        <button id="submit">Submit</button> 
+        <div id="editSection" class="hidden"> 
+            <button id="cancelEdit" onclick="cancelEdit()">Cancel</button> 
+            <button id="updateEntry" onclick="editRow()">Update</button> 
+        </div> 
+        <table> 
+            <thead> 
+                <tr> 
+                    <th>Date</th> 
+                    <th>Water Intake (in ml)</th> 
+                    <th>Exercise Duration (in sec)</th> 
+                    <th>Calories Intake (in cal)</th> 
+                    <th>Edit</th> 
+                    <th>Delete</th> 
+                </tr> 
+            </thead> 
+            <tbody id="output"> 
+            </tbody> 
+        </table> 
+        <!-- Add canvas for Chart.js -->
+        <canvas id="myChart"></canvas>
+        <button id="toggleGraph">Toggle Graph Type</button>
+    </div> 
+    <!-- Font Awesome JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"> 
+    </script> 
+    <script src="/script.js"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body> 
+</html>
