@@ -9,8 +9,7 @@
 </head> 
 <body> 
     <div class="app"> 
-        <h1>Group Number-3</h1> 
-        <h3>Health Tracker App</h3> 
+        <h1>Health Tracker App</h1> 
         <div class="inputs"> 
             <div> 
                 <label for="water">Water Intake (in ml)</label> 
